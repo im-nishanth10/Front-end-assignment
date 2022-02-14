@@ -1,0 +1,41 @@
+<!--
+<h1 *ngFor="let item of numbers">
+  The number is {{item}}
+</h1>
+<h1 *ngIf="show">Hello</h1>
+-->
+<!--
+<h1 *ngIf="show else elseBlock">Hello</h1>
+<ng-template #elseBlock>
+  <h1>Hi</h1>
+</ng-template>
+-->
+<!--
+<h1 *ngIf="show2=='3' then thenBlock else elseBlock">Hello</h1>
+<ng-template #thenBlock>
+  <h1>Bye</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h1>Hi</h1>
+</ng-template>
+-->
+<!--
+<div [ngSwitch]="color">
+  <h1 *ngSwitchCase="'red'">Red</h1>
+  <h1 *ngSwitchCase="'blue'">Blue</h1>
+  <h1 *ngSwitchCase="'black'">Black</h1>
+  <h1 *ngSwitchDefault>Transparent</h1>
+</div>
+-->
+<!--
+<h1>{{ 'MAYANKGUPTA@GMAIL.COM' | lowercase}}</h1>
+<h1>{{ 'mayankgupta@gmail.com' | uppercase}}</h1>
+<h1>{{ 'mayank gupta' | titlecase}}</h1>
+<h1>{{ '123' | currency}}</h1>
+<h1>{{start | date}}</h1>
+-->
+<h1>{{ '123' | currency:'INR'}}</h1>
+<h1>{{ '123' | currency:'GBP'}}</h1>
+<h1>{{start | date:'long'}}</h1>
+<h1>{{start | date:'short'}}</h1>
+<h1>{{start | date:'long' | uppercase}}</h1>

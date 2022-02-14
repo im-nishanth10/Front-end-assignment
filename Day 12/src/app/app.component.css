@@ -1,0 +1,11 @@
+.navbar{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+input.ng-invalid{
+    border: 2px solid red;
+}
+small{
+    color: red;
+}

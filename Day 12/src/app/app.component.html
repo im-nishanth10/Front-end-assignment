@@ -1,0 +1,8 @@
+<form action="" #logIn="ngForm" (ngSubmit)="signIn(logIn.value)">
+  <input type="text" placeholder="Enter Name" name="fname" ngModel minlength="7">
+  <br><br>
+  <small *ngIf="logIn.invalid">Please enter valid name</small>
+  <input type="password" name="password" id="" placeholder="Enter Password" ngModel>
+  <br>
+  <button type="submit">Sign In</button>
+</form>
